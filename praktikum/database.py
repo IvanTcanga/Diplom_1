@@ -31,17 +31,3 @@ class Database:
 
     def available_ingredients(self) -> List[Ingredient]:
         return self.ingredients
-
-
-if __name__ == "__main__":
-    database = Database()
-    ingredients = database.available_ingredients()
-    buns = database.available_buns()
-    print("Доступные ингредиенты:")
-    for ingredient in ingredients:
-        # Выводим каждый атрибут объекта Ingredient
-        print({ingredient.type}, {ingredient.name}, {ingredient.price})
-    print("Доступные ингредиенты:")
-    for bun in buns:
-        # Выводим каждый атрибут объекта Ingredient
-        print({bun.name}, {bun.price})
